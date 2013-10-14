@@ -1,1 +1,1 @@
-web: ./boot.sh
+web: start_nginx.sh
