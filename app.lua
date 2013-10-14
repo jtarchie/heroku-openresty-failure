@@ -11,6 +11,7 @@ app:get("/loaderio%-:token.html", function(token)
   return "loaderio-" .. token
 end)
 
+
 app:get("/:name", function(name)
   if (request.headers['Accept'] == 'application/json') then
     self:status(201)
