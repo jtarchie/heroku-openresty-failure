@@ -7,6 +7,10 @@ app:get("/", function()
   return "Hello, World"
 end)
 
+app:get("/loaderio-:token", function(token)
+  return "loaderio-" .. token
+end)
+
 app:get("/:name", function(name)
   if (request.headers['Accept'] == 'application/json') then
     self:status(201)
