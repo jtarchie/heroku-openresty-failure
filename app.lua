@@ -7,7 +7,7 @@ app:get("/", function()
   return "Hello, World"
 end)
 
-app:get("/loaderio-:token", function(token)
+app:get("/loaderio-:token.html", function(token)
   return "loaderio-" .. token
 end)
 
