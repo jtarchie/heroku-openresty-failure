@@ -30,5 +30,4 @@ app:get("/age/:age", function(age)
   end
 end)
 
-app:run()
-
+return app
